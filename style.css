@@ -1,64 +1,84 @@
+:root {
+  --main-dark-background-color: #1F2937;
+  --main-text-color: #F9FaF8;
+  --secondary-text-color: #d6d6d6;
+  --button-cta-color: #3882F6;
+}
+
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
-.dark-background {
-  background-color: #1F2937;
-  color: white;
+a {
+  text-decoration: none;
+  color: var(--main-text-color);
 }
 
-.header-container {
-  padding: 10px 25px;
+.hero-background {
+  margin: 0;
+  padding: 2rem 2rem;
+  background-color: var(--main-dark-background-color);
   display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.hero-container {
+  margin-left: 15%;
+  margin-right: 15%;
+  width: 70%;
+}
+
+.header-logo {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.flex-nav-container-row {
+  display: flex;
+  flex-direction: row;
   justify-content: space-between;
 }
 
-.header-logo-text {
-  font-size: 24px ;
-  font-weight: bold;
-  color: #F9FAF8;
-  margin-left: 6rem;
+.padding-items {
+  padding: 0 1.5rem;
 }
 
-.nav-container {
+.space-between-right-nav {
+  margin: 0 1rem;
+  color: var(--secondary-text-color);
+}
+
+.hero-container-spacing {
+  margin-top: 5rem;
   display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 50px;
-  margin-right: 6rem;
-  font-size: 18px;
-  color: #E5E7EB;
+  flex-direction: row;
+  justify-content: space-between;
 }
 
-.hero-section {
-  display: flex;
-  padding-bottom: 4rem;
+.hero-main-text {
+  font-size: 3rem;
+  font-weight: bolder;
+  color: var(--main-text-color);
 }
 
-.half-width {
-  width: 45%;
-}
-
-.hero-cta {
-  margin-left: 6rem;
-  padding: 2rem 1.5rem;
+.hero-secondary-text {
+  font-size: 1rem;
+  color: var(--secondary-text-color);
 }
 
 .hero-image {
-  background-color: gray;
-  margin: 2rem 3rem;
-  padding: 3rem 1.5rem;
-  height: 200px;
+  width: 28rem;
 }
 
-.awesome-website-text {
-  font-size: 48px;
-  font-weight: extra-bold;
-}
-
-.awesome-website-subtext {
-  font-size: 18px;
-  color: #E5E7EB;
+.sign-up-button {
+  color: var(--main-text-color);
+  font-weight: bold;
+  background-color: var(--button-cta-color);
+  padding: 0.3rem 1.8rem;
+  margin: 0.5rem 0;
+  border-radius: 8px;
+  border: none;
 }
